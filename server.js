@@ -5,42 +5,42 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articles={
-'article1':{
-    title:'Article one|Aakanksha singh',
-    heading:'Article One',
-    date:'August 30,2017',
-    content: `
-            <p>
-                This is article one and making webpages seems so interesting
-            </p>
-            <p>
-                wowwwwww.
-            </p>`
-},
-'article2':{
-     title:'Article two|Aakanksha singh',
-    heading:'Article Two',
-    date:'August 30,2017',
-    content: `
-            <p>
-                This is article two and making webpages seems so interesting
-            </p>
-            <p>
-                wowwwwww.
-            </p>`
-},
-'article3':{
-     title:'Article three|Aakanksha singh',
-    heading:'Article Three',
-    date:'August 30,2017',
-    content: `
-            <p>
-                This is article three and making webpages seems so interesting
-            </p>
-            <p>
-                wowwwwww.
-            </p>`
-}
+    'article1':{
+                    title:'Article one|Aakanksha singh',
+                    heading:'Article One',
+                    date:'August 30,2017',
+                    content: `
+                            <p>
+                                This is article one and making webpages seems so interesting
+                            </p>
+                            <p>
+                                wowwwwww.
+                            </p>`
+                },
+    'article2':{
+            title:'Article two|Aakanksha singh',
+            heading:'Article Two',
+            date:'August 31,2017',
+            content: `
+                <p>
+                    This is article two and making webpages seems so interesting
+                </p>
+                <p>
+                    wowwwwww.
+                </p>`
+    },
+    'article3':{
+         title:'Article three|Aakanksha singh',
+        heading:'Article Three',
+        date:'August 29,2017',
+        content: `
+                <p>
+                    This is article three and making webpages seems so interesting
+                </p>
+                <p>
+                    wowwwwww.
+                </p>`
+    }
 };
 
 function createTemplate(data){
@@ -73,7 +73,7 @@ var htmlTemplate=`<html>
         </div>
     </body>
 </html>`;
-return htmlTemplate;
+return htmlTemplate,
 }
 
 app.get('/', function (req, res) {
