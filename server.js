@@ -16,10 +16,15 @@ var article1={
                 wowwwwww.
             </p>`
 };
+function createTemplate(data){
+var date=data.date;
+var heading=data.heading;
+var content=data.content;
+var title=data.title;
 var htmlTemplate=`<html>
     <head>
         <title>
-            Article-1 | Aaknksha singh
+            ${title}
         </title>
      <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -30,28 +35,24 @@ var htmlTemplate=`<html>
         </div>
         <hr/>
         <h3>
-            ARTICLE-ONE
+            ${heading}
         </h3>
         <div>
-            AUGUST 30,2017
+            ${date}
         </div>
         <div>
-            <p>
-                This is article one and making webpages seems so interesting
-            </p>
-            <p>
-                wowwwwww.
-            </p>
+           ${content}
         </div>
         </div>
     </body>
-</html>`
-
+</html>`;
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
+    res.send(createTemplate(article1))
 });
 app.get('/article-three',function(req,res){
    res.send('This is article three'); 
