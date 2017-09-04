@@ -19,10 +19,12 @@ body {
 .img-medium {
     height: 200px;
 }
-    .container{
+.container{
            max-width:800px;
            margin:0 auto;
            color:blue;
-           font-family: algerian;
+           font-family: monotype corsiva;
+           padding-left:30px;
+           padding-right:30px;
        } 
 
