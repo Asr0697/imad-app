@@ -18,29 +18,29 @@ var articles={
                             </p>`
                 },
     article2:{
-            title:'Article two|Aakanksha singh',
-            heading:'Article Two',
-            date:'August 31,2017',
-            content: `
-                <p>
-                    This is article two and making webpages seems so interesting
-                </p>
-                <p>
-                    wowwwwww.
-                </p>`
+                    title:'Article two|Aakanksha singh',
+                    heading:'Article Two',
+                    date:'August 31,2017',
+                     content: `
+                            <p>
+                                This is article two and making webpages seems so interesting
+                            </p>
+                            <p>
+                                wowwwwww.
+                            </p>`
     },
     article3:{
-         title:'Article three|Aakanksha singh',
-        heading:'Article Three',
-        date:'August 29,2017',
-        content: `
-                <p>
-                    This is article three and making webpages seems so interesting
-                </p>
-                <p>
-                    wowwwwww.
-                </p>`
-    }
+                    title:'Article three|Aakanksha singh',
+                    heading:'Article Three',
+                    date:'August 29,2017',
+                    content: `
+                            <p>
+                                This is article three and making webpages seems so interesting
+                            </p>
+                            <p>
+                                wowwwwww.
+                            </p>`
+                }
 };
 
 function createTemplate(data){
