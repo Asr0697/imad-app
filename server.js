@@ -8,16 +8,44 @@ var article1={
     title:'Article one|Aakanksha singh',
     heading:'Article One',
     date:'August 30,2017',
-    content: 
-             '<p>
+    content: `
+            <p>
                 This is article one and making webpages seems so interesting
             </p>
             <p>
                 wowwwwww.
-            </p> '
-        
-    
+            </p>`
 };
+var htmlTemplate=`<html>
+    <head>
+        <title>
+            Article-1 | Aaknksha singh
+        </title>
+     <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+         <div>
+            <a href="/">Home</a>
+        </div>
+        <hr/>
+        <h3>
+            ARTICLE-ONE
+        </h3>
+        <div>
+            AUGUST 30,2017
+        </div>
+        <div>
+            <p>
+                This is article one and making webpages seems so interesting
+            </p>
+            <p>
+                wowwwwww.
+            </p>
+        </div>
+        </div>
+    </body>
+</html>`
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
